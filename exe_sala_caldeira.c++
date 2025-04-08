@@ -19,16 +19,19 @@ int main(){
     setlocale(LC_ALL, "Portuguese");
     caldeira c1;
     
-    printf("Digite a temperatura da caldeira: ");
-    scanf("%f", &c1.temperatura);
+    printf("\nInsira os dados da caldeira:\n");
+    printf("\nDigite a temperatura da caldeira: ");
+    scanf(" %f", &c1.temperatura);
     printf("Digite a pressao da caldeira: ");
-    scanf("%f", &c1.pressao);
+    scanf(" %f", &c1.pressao);
     printf("Digite o volume de agua da caldeira: ");
-    scanf("%f", &c1.volume);
+    scanf(" %f", &c1.volume);
 
-    printf("Temperatura: %.2f\n", c1.temperatura);
+    printf("\n************************************************\n");
+    printf("\nDados da caldeira:\n");
+    printf("\nTemperatura: %.2f\n", c1.temperatura);
     printf("Pressao: %.2f\n", c1.pressao);
     printf("Volume: %.2f\n", c1.volume);
-
+    printf("\n************************************************\n");
     return 0;
 }
